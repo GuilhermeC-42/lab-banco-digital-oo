@@ -2,6 +2,7 @@
 public class Cliente {
 
 	private String nome;
+	private String sobrenome;
 
 	public String getNome() {
 		return nome;
@@ -11,4 +12,15 @@ public class Cliente {
 		this.nome = nome;
 	}
 
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+
+	public String getNomeCompleto(){
+		return this.nome + this.sobrenome;
+	}
 }
